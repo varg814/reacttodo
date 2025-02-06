@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=DM+Serif+Display:ital@0;1&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Russo+One&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+body {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  width: 100%;
+  max-width: 430px;
+  background-color: white;
+  border-radius: 10px;
+
+  .time {
+    position: relative;
+    height: 202px;
+    background-image: url("./images/Rectangle\ 2.png");
+
+    .wrapper {
+      text-align: right;
+      position: absolute;
+      bottom: 13px;
+      right: 28px;
+
+      p {
+        color: #fff;
+        font-family: "Russo One";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      h1 {
+        color: #fff;
+        font-family: "Russo One";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    padding: 23px 29px;
+
+    .form {
+      display: flex;
+      justify-content: space-between;
+
+      input {
+        color: #888;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 100%;
+        max-width: 275px;
+        padding: 12px 48px;
+        border-radius: 5px;
+        background: #ebeff2;
+        outline: none;
+        border: none;
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+        background-position: 14px 12px;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="%2320EEB0" stroke="%2320EEB0" stroke-width="2"/><path d="M10.7783 14.657L8.9143 12.7253C8.81386 12.6212 8.67763 12.5628 8.53558 12.5628C8.39354 12.5628 8.25731 12.6212 8.15687 12.7253C8.05643 12.8294 8 12.9706 8 13.1178C8 13.1907 8.01385 13.2628 8.04077 13.3302C8.06768 13.3975 8.10714 13.4587 8.15687 13.5102L10.4023 15.8372C10.6118 16.0543 10.9502 16.0543 11.1597 15.8372L16.8431 9.94748C16.9436 9.8434 17 9.70222 17 9.55502C17 9.40782 16.9436 9.26665 16.8431 9.16256C16.7427 9.05848 16.6065 9 16.4644 9C16.3224 9 16.1861 9.05848 16.0857 9.16256L10.7783 14.657Z" fill="white"/></svg>');
+      }
+
+      button {
+        height: 50px;
+        width: 88px;
+        border-radius: 5px;
+        background: #20eeb0;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    ol {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+
+        .text {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          h1 {
+            color: #0d0d0d;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          p {
+            color: #888;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+
+        .buttons {
+          display: flex;
+          gap: 14px;
+          align-items: center;
+
+          .delete {
+            background-color: white;
+            border: none;
+            height: 24px;
+          }
+
+          .check {
+            background-color: white;
+            border: none;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
